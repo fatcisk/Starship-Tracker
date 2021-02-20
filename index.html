@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e9dae8f569.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>SpaceX Starship Info</title>
+  </head>
+  <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDVtts25jDvQy6o9w-nfLXha104av8iftg",
+        authDomain: "live-chat-66652.firebaseapp.com",
+        projectId: "live-chat-66652",
+        storageBucket: "live-chat-66652.appspot.com",
+        messagingSenderId: "734761931715",
+        appId: "1:734761931715:web:7a91afeec5bd011e676376",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <div class="left-container">
+      <div class="flights-container">
+        <div class="last-flight">
+          <h1 class="last-flight-name">
+            Starship <span class="serial-number">SN10</span>
+          </h1>
+          <h3 class="last-flight-description">high altitude flight test</h3>
+          <div class="last-flight-status"><h1>PLANNED</h1></div>
+          <p class="last-flight-paragraph">
+            SN10 was moved to the launch site to begin its preflight tests on 29
+            January 2021. Static fire possible NET (not earlier than) 22
+            February
+          </p>
+          <div class="other-details">
+            <div class="first-cont">
+              <div class="date">Date and time of takeoff (UTC)</div>
+              <div class="launch-site">Launch site</div>
+              <div class="apogee">Suborbital apogee</div>
+              <div class="Duration">Duration</div>
+            </div>
+            <div class="second-cont">
+              <div class="date">NET February 2021</div>
+              <div class="launch-site">Boca Chica, Texas</div>
+              <div class="apogee">high altitude</div>
+              <div class="Duration">-</div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="all-flights">
+          <div class="sn9-flight snflight">
+            <div class="vehicle">
+              <h1>Starship <span class="serial-number">SN9</span></h1>
+            </div>
+            <div class="outcome fail"><h1>DESTROYED ON LANDING</h1></div>
+          </div>
+          <div class="sn8-flight snflight">
+            <div class="vehicle">
+              <h1>Starship <span class="serial-number">SN8</span></h1>
+            </div>
+            <div class="outcome fail"><h1>DESTROYED ON LANDING</h1></div>
+          </div>
+          <div class="sn6-flight snflight">
+            <div class="vehicle">
+              <h1>Starship <span class="serial-number">SN6</span></h1>
+            </div>
+            <div class="outcome success"><h1>SUCCESS</h1></div>
+          </div>
+          <div class="sn5-flight snflight">
+            <div class="vehicle">
+              <h1>Starship <span class="serial-number">SN5</span></h1>
+            </div>
+            <div class="outcome success"><h1>SUCCESS</h1></div>
+          </div>
+
+          <div class="starhopper-flight snflight">
+            <div class="vehicle">
+              <h1>Starhopper</h1>
+            </div>
+            <div class="outcome success"><h1>SUCCESS</h1></div>
+          </div>
+
+          <div class="starhopper-flight snflight">
+            <div class="vehicle">
+              <h1>Starhopper</h1>
+            </div>
+            <div class="outcome success"><h1>SUCCESS</h1></div>
+          </div>
+
+          <div class="starhopper-flight snflight">
+            <div class="vehicle">
+              <h1>Starhopper</h1>
+            </div>
+            <div class="outcome success"><h1>SUCCESS</h1></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="predictions-container">
+        <h1 class="last-flight-name">
+          Starship <span class="serial-number">SN10</span>
+        </h1>
+        <h3 class="last-flight-description">outcome predictions</h3>
+        <h1 style="color: white; font-size: 12px; margin-top: 30px">
+          Success rate based on users' votes
+        </h1>
+        <h1 class="percent">%76</h1>
+
+        <div class="thumbs-container">
+          <i class="far fa-thumbs-up thumbs"></i>
+          <i class="far fa-thumbs-down thumbs"></i>
+        </div>
+        <div class="votes">
+          <p class="up-count count">0</p>
+          <p class="down-count count">0</p>
+        </div>
+      </div>
+      <div class="discussion-container">
+        <div class="user-info">
+          <h1 class="last-flight-name live-d">Username :</h1>
+          <input autocomplete="off" id="input2" type="text" />
+        </div>
+        <hr />
+        <div class="chat-area">
+          <ul id="messages"></ul>
+        </div>
+      </div>
+      <div class="form-container">
+        <form onsubmit="return sendMessage();" class="form" action="">
+          <!--
+
+       -->
+          <input
+            autocomplete="off"
+            class="input"
+            type="text"
+            name=""
+            id="message"
+          />
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="sketchfab-embed-wrapper">
+      <iframe
+        style="border: none"
+        title="STARSHIP MK1"
+        src="https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=0&autostart=0&preload=1&ui_theme=1"
+      >
+      </iframe>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

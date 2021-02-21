@@ -28,8 +28,6 @@ firebase
   });
 
 function sn9Flight() {
-  window.location.href = "#";
-
   document.querySelector(".last-flight2").style.display = "flex";
 
   document.querySelector(".last-flight-name2").innerHTML =
@@ -52,7 +50,6 @@ function sn9Flight() {
 }
 
 function sn8Flight() {
-  window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
   document.querySelector(".last-flight-name2").innerHTML =
@@ -75,7 +72,6 @@ function sn8Flight() {
 }
 
 function sn6Flight() {
-  window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
   document.querySelector(".last-flight-name2").innerHTML =
@@ -98,7 +94,6 @@ function sn6Flight() {
 }
 
 function sn5Flight() {
-  window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
   document.querySelector(".last-flight-name2").innerHTML =
@@ -121,7 +116,6 @@ function sn5Flight() {
 }
 
 function sh3Flight() {
-  window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
   document.querySelector(".last-flight-name2").innerHTML = "Starhopper";
@@ -143,7 +137,6 @@ function sh3Flight() {
 }
 
 function sh2Flight() {
-  window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
   document.querySelector(".last-flight-name2").innerHTML = "Starhopper";
@@ -165,8 +158,6 @@ function sh2Flight() {
 }
 
 function sh1Flight() {
-  window.location.href = "#";
-
   document.querySelector(".last-flight2").style.display = "flex";
 
   document.querySelector(".last-flight-name2").innerHTML = "Starhopper";

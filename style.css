@@ -152,6 +152,11 @@
   background-color: #232323;
 }
 
+.a {
+  color: #dddddd;
+  text-decoration: none;
+}
+
 .snflight {
   display: flex;
   justify-content: space-between;

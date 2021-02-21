@@ -10,6 +10,10 @@ function sendMessage() {
   return false;
 }
 
+function closeTab() {
+  document.querySelector(".last-flight2").style.display = "none";
+}
+
 firebase
   .database()
   .ref("messages")

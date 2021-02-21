@@ -186,8 +186,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+  border-radius: 10px;
 }
 
 .success {
@@ -232,9 +231,6 @@ li {
   color: red;
 }
 
-.chat-area {
-}
-
 .discussion-container::-webkit-scrollbar {
   display: none;
 }
@@ -247,6 +243,15 @@ li {
   position: absolute;
   width: 85%;
   bottom: 10px;
+}
+
+.close {
+  margin-right: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  cursor: pointer;
 }
 
 #input2 {
@@ -331,6 +336,7 @@ iframe {
     background: #232323;
     border-radius: 20px;
     overflow-y: scroll;
+    margin-top: 20px;
   }
 
   .predictions-container {
@@ -342,7 +348,6 @@ iframe {
 
   .discussion-container {
     width: 95%;
-    height: 65%;
     background: #232323;
     border-radius: 20px;
   }
@@ -355,5 +360,52 @@ iframe {
     position: absolute;
     width: 95%;
     bottom: 10px;
+  }
+
+  .percent {
+    font-size: 40px;
+  }
+
+  .thumbs {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .other-details {
+    font-size: 12px;
+  }
+
+  .other-details2 {
+    font-size: 12px;
+  }
+
+  .second-cont {
+    font-size: 12px;
+  }
+
+  .last-flight-paragraph {
+    font-size: 16px;
+  }
+
+  .last-flight-paragraph2 {
+    font-size: 16px;
+  }
+
+  .snflight {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .vehicle {
+    font-size: 8px;
+  }
+
+  .outcome {
+    height: 35px;
+    font-size: 6px;
+    font-weight: 700;
   }
 }

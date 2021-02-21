@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .left-container {
@@ -12,7 +13,7 @@
   height: 100vh;
   left: 0px;
   top: 0px;
-  background: #2c2c2c;
+  background: #232323;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +27,7 @@
   height: 100vh;
   right: 0px;
   top: 0px;
-  background: #2c2c2c;
+  background: #232323;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -60,7 +61,7 @@
 .flights-container {
   width: 85%;
   height: 96%;
-  background: #232323;
+  background: #2c2c2c;
   border-radius: 20px;
   overflow-y: scroll;
 }
@@ -81,6 +82,10 @@
   align-items: center;
 }
 
+.last-flight2 {
+  border-top: 1px solid white;
+}
+
 .last-flight-name {
   font-size: 36px;
   color: #dddddd;
@@ -90,6 +95,11 @@
 .last-flight-description {
   font-size: 14px;
   color: #dddddd;
+}
+
+.text {
+  color: white;
+  text-align: start;
 }
 
 .last-flight-status {
@@ -135,10 +145,11 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .snflight:hover {
-  background-color: #2c2c2c;
+  background-color: #232323;
 }
 
 .snflight {
@@ -174,30 +185,34 @@
 .predictions-container {
   width: 85%;
   height: 30%;
-  background: #232323;
+  background: #2c2c2c;
   border-radius: 20px;
 }
 
 .discussion-container {
   width: 85%;
   height: 65%;
-  background: #232323;
+  background: #2c2c2c;
   border-radius: 20px;
   overflow-y: scroll;
 }
 
 #messages {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 10px;
-  list-style: none;
-  font-size: 24px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 500;
-  border-radius: 50px;
   color: white;
+  text-align: start;
+  padding: 10px;
+  padding-bottom: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+li {
+  margin-top: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .username {
@@ -206,7 +221,6 @@
 }
 
 .chat-area {
-  height: 100%;
 }
 
 .discussion-container::-webkit-scrollbar {

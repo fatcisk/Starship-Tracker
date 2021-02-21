@@ -61,53 +61,87 @@
             </div>
           </div>
         </div>
+
+        <div class="last-flight last-flight2" style="display: none">
+          <h1 class="last-flight-name last-flight-name2">
+            Starship <span class="serial-number">SN10</span>
+          </h1>
+          <h3 class="last-flight-description last-flight-description2">
+            high-altitude flight test
+          </h3>
+          <div class="last-flight-status last-flight-status2">
+            <h1 class="curret-status">PLANNED</h1>
+          </div>
+          <p class="last-flight-paragraph last-flight-paragraph2">
+            SN10 was moved to the launch site to begin its preflight tests on 29
+            January 2021. Static fire possible NET (not earlier than) 22
+            February
+          </p>
+          <div class="other-details other-details2">
+            <div class="first-cont">
+              <div class="date">Date and time of takeoff (UTC)</div>
+              <div class="launch-site">Launch site</div>
+              <div class="apogee">Suborbital apogee</div>
+              <div class="Duration">Duration</div>
+            </div>
+            <div class="second-cont">
+              <div class="date date2">NET February 2021</div>
+              <div class="launch-site launch-site2">Boca Chica, Texas</div>
+              <div class="apogee apogee2">high altitude</div>
+              <div class="duration duration2">-</div>
+            </div>
+          </div>
+        </div>
+
         <hr />
         <div class="all-flights">
-          <div class="sn9-flight snflight">
+          <div onclick="sn9Flight()" class="sn9-flight snflight">
             <div class="vehicle">
               <h1>Starship <span class="serial-number">SN9</span></h1>
             </div>
             <div class="outcome fail"><h1>DESTROYED ON LANDING</h1></div>
           </div>
-          <div class="sn8-flight snflight">
+          <div onclick="sn8Flight()" class="sn8-flight snflight">
             <div class="vehicle">
               <h1>Starship <span class="serial-number">SN8</span></h1>
             </div>
             <div class="outcome fail"><h1>DESTROYED ON LANDING</h1></div>
           </div>
-          <div class="sn6-flight snflight">
+          <div onclick="sn6Flight()" class="sn6-flight snflight">
             <div class="vehicle">
               <h1>Starship <span class="serial-number">SN6</span></h1>
             </div>
             <div class="outcome success"><h1>SUCCESS</h1></div>
           </div>
-          <div class="sn5-flight snflight">
+          <div onclick="sn5Flight()" class="sn5-flight snflight">
             <div class="vehicle">
               <h1>Starship <span class="serial-number">SN5</span></h1>
             </div>
             <div class="outcome success"><h1>SUCCESS</h1></div>
           </div>
 
-          <div class="starhopper-flight snflight">
+          <div onclick="sh3Flight()" class="starhopper-flight snflight">
             <div class="vehicle">
               <h1>Starhopper</h1>
             </div>
             <div class="outcome success"><h1>SUCCESS</h1></div>
           </div>
 
-          <div class="starhopper-flight snflight">
+          <div onclick="sh2Flight()" class="starhopper-flight snflight">
             <div class="vehicle">
               <h1>Starhopper</h1>
             </div>
             <div class="outcome success"><h1>SUCCESS</h1></div>
           </div>
 
-          <div class="starhopper-flight snflight">
+          <div onclick="sh1Flight()" class="starhopper-flight snflight">
             <div class="vehicle">
               <h1>Starhopper</h1>
             </div>
             <div class="outcome success"><h1>SUCCESS</h1></div>
           </div>
+          <br />
+          <hr />
         </div>
       </div>
     </div>
@@ -137,15 +171,15 @@
           <input autocomplete="off" id="input2" type="text" />
         </div>
         <hr />
-        <div class="chat-area">
-          <ul id="messages"></ul>
-        </div>
+
+        <ul id="messages"></ul>
       </div>
       <div class="form-container">
         <form onsubmit="return sendMessage();" class="form" action="">
           <!--
 
        -->
+
           <input
             autocomplete="off"
             class="input"

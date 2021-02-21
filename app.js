@@ -27,6 +27,8 @@ firebase
     document.getElementById("messages").innerHTML += html;
   });
 
+function myFunc() {}
+
 function sn9Flight() {
   window.location.href = "#";
 

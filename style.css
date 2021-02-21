@@ -157,6 +157,13 @@
   text-decoration: none;
 }
 
+#a {
+  position: relative;
+  color: white;
+  top: 0;
+  left: 0;
+}
+
 .snflight {
   display: flex;
   justify-content: space-between;
@@ -296,7 +303,7 @@ iframe {
   .left-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     left: 0px;
     top: 0px;
     background: #2c2c2c;

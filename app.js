@@ -1,13 +1,72 @@
 function sendMessage() {
-  let myName = document.getElementById("input2").value;
+  let myName = localStorage.getItem("username");
   let message = document.getElementById("message").value;
 
-  firebase.database().ref("messages").push().set({
-    sender: myName,
-    message: message,
+  if (message !== "") {
+    firebase.database().ref("messages").push().set({
+      sender: myName,
+      message: message,
+    });
+
+    document.querySelector(".jdf").location.href = "#jdff";
+
+    return false;
+  }
+}
+
+function sended() {
+  setTimeout(function () {
+    let message = (document.getElementById("message").value = "");
+  }, 30);
+}
+
+const messageInput = document.getElementById("message");
+const usernameInput = document.querySelector(".set-input");
+const sendButton = document.getElementById("sendBtn");
+const saveBtn = document.querySelector(".set-button");
+
+function saveUsername() {
+  if (usernameInput.value === "") {
+    alert("Please set your username");
+  } else {
+    messageInput.style.display = "block";
+    sendButton.style.display = "block";
+    localStorage.setItem("username", usernameInput.value);
+    localStorage.setItem("inputVisible", "true");
+    usernameInput.style.display = "none";
+    saveBtn.style.display = "none";
+  }
+}
+
+function check() {
+  if (localStorage.getItem("inputVisible") == "true") {
+    messageInput.style.display = "block";
+    sendButton.style.display = "block";
+    usernameInput.style.display = "none";
+    saveBtn.style.display = "none";
+  } else {
+    messageInput.style.display = "none";
+    sendButton.style.display = "none";
+  }
+}
+
+firebase
+  .database()
+  .ref("votes")
+  .on("child_added", function (snapshot) {
+    document.querySelector(".up-count").innerHTML = snapshot.val().upvotes;
   });
 
-  return false;
+function upClick() {
+  var a = document.querySelector(".up-count").innerHTML;
+  var b = parseInt(a);
+  firebase
+    .database()
+    .ref("votes")
+    .push()
+    .update({
+      upvotes: b + 1,
+    });
 }
 
 function closeTab() {

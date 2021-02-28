@@ -11,7 +11,7 @@
     ></script>
     <title>SpaceX Starship Info</title>
   </head>
-  <body>
+  <body onload="check();">
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
@@ -164,33 +164,22 @@
       </div>
     </div>
     <div class="right-container">
-      <div class="predictions-container">
-        <h1 class="last-flight-name">
-          Starship <span class="serial-number">SN10</span>
-        </h1>
-        <h3 class="last-flight-description">outcome predictions</h3>
-        <h1 style="color: white; font-size: 12px; margin-top: 30px">
-          Success rate based on users' votes
-        </h1>
-        <h1 class="percent">%76</h1>
-
-        <div class="thumbs-container">
-          <i class="far fa-thumbs-up thumbs"></i>
-          <i class="far fa-thumbs-down thumbs"></i>
-        </div>
-        <div class="votes">
-          <p class="up-count count">0</p>
-          <p class="down-count count">0</p>
-        </div>
-      </div>
+      <div class="predictions-container"></div>
       <div class="discussion-container">
         <div class="user-info">
-          <h1 class="last-flight-name live-d">Username :</h1>
-          <input autocomplete="off" id="input2" type="text" />
+          <input
+            id="input3"
+            placeholder="Your Username"
+            class="set-input"
+            type="text"
+          />
+          <button onclick="saveUsername();" class="set-button">Save</button>
         </div>
         <hr />
-
-        <ul id="messages"></ul>
+        <div class="jdf">
+          <ul id="messages"></ul>
+          <h1 id="jdff">hello</h1>
+        </div>
       </div>
       <div class="form-container">
         <form onsubmit="return sendMessage();" class="form" action="">
@@ -204,8 +193,17 @@
             type="text"
             name=""
             id="message"
+            style="display: none"
           />
-          <button type="submit" class="send-btn">Send</button>
+          <button
+            onclick="sended();"
+            style="display: none"
+            type="submit"
+            class="send-btn"
+            id="sendBtn"
+          >
+            Send
+          </button>
         </form>
       </div>
     </div>

@@ -1,19 +1,18 @@
 const modelContainer = document.querySelector(".sketchfab-embed-wrapper");
-
+const backBtn = document.querySelector(".model-backbtn-container");
 function mobile3dview() {
   modelContainer.style.display = "flex";
-  modelContainer.style.position = "absolute";
+  modelContainer.style.position = "fixed";
   modelContainer.style.top = "0";
   document.body.style.overflow = "hidden";
   backBtn.style.display = "block";
 }
-
-const backBtn = document.querySelector(".model-backbtn-container");
-
 function mobile3dviewBack() {
   backBtn.style.display = "none";
   modelContainer.style.display = "none";
   document.body.style.overflow = "visible";
+  backBtn.style.position = "fixed";
+  backBtn.style.top = "10";
 }
 
 function sendMessage() {
@@ -115,6 +114,8 @@ firebase
 function myFunc() {}
 
 function sn9Flight() {
+  document.querySelector(".iframee").src =
+    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
 
   document.querySelector(".last-flight2").style.display = "flex";
@@ -139,6 +140,8 @@ function sn9Flight() {
 }
 
 function sn8Flight() {
+  document.querySelector(".iframee").src =
+    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
@@ -162,6 +165,8 @@ function sn8Flight() {
 }
 
 function sn6Flight() {
+  document.querySelector(".iframee").src =
+    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
@@ -185,6 +190,8 @@ function sn6Flight() {
 }
 
 function sn5Flight() {
+  document.querySelector(".iframee").src =
+    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
@@ -209,7 +216,7 @@ function sn5Flight() {
 
 function sh3Flight() {
   document.querySelector(".iframee").src =
-    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed";
+    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
@@ -233,7 +240,7 @@ function sh3Flight() {
 
 function sh2Flight() {
   document.querySelector(".iframee").src =
-    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed";
+    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
@@ -257,7 +264,7 @@ function sh2Flight() {
 
 function sh1Flight() {
   document.querySelector(".iframee").src =
-    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed";
+    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
 
   document.querySelector(".last-flight2").style.display = "flex";

@@ -6,6 +6,7 @@ function mobile3dview() {
   modelContainer.style.display = "flex";
   modelContainer.style.position = "fixed";
   modelContainer.style.top = "0";
+  modelContainer.style.left = "0";
   document.body.style.overflow = "hidden";
   backBtn.style.display = "block";
 }
@@ -15,6 +16,7 @@ function mobile3dviewBack() {
   document.body.style.overflow = "visible";
   backBtn.style.position = "fixed";
   backBtn.style.top = "10";
+  backBtn.style.left = "0";
 }
 
 function sendMessage() {
@@ -116,26 +118,26 @@ firebase
 function myFunc() {}
 
 function sn9Flight() {
+  if (
+    document.querySelector(".iframee").src !=
+    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1"
+  ) {
+    document.querySelector(".iframee").src =
+      "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
+  }
+
   replayBtn.href = "https://www.youtube.com/watch?v=_zZ7fIkpBgs&t=342s";
-  document.querySelector(".iframee").src =
-    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
-
   document.querySelector(".last-flight2").style.display = "flex";
-
   document.querySelector(".last-flight-name2").innerHTML =
     "Starship <span class='serial-number'>SN9</span>";
-
   document.querySelector(".last-flight-description2").innerHTML =
     "high-altitude flight test";
-
   document.querySelector(".last-flight-status2").style.backgroundColor =
     "#c20000";
   document.querySelector(".curret-status").innerHTML = "DESTROYED ON LANDING";
-
   document.querySelector(".last-flight-paragraph2").innerHTML =
     "Three Raptor engines, including SN45 and SN49. Test flight on 2 February 2021, during landing, one of the engines failed to ignite, resulting in a hard landing that destroyed SN9.";
-
   document.querySelector(".date2").innerHTML = "2 February 2021 20:25";
   document.querySelector(".launch-site2").innerHTML = "Boca Chica, Texas";
   document.querySelector(".apogee2").innerHTML = "10 km (6.2 mi)";
@@ -143,9 +145,15 @@ function sn9Flight() {
 }
 
 function sn8Flight() {
+  if (
+    document.querySelector(".iframee").src !=
+    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1"
+  ) {
+    document.querySelector(".iframee").src =
+      "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
+  }
+
   replayBtn.href = "https://www.youtube.com/watch?v=ap-BkkrRg-o";
-  document.querySelector(".iframee").src =
-    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
@@ -169,9 +177,14 @@ function sn8Flight() {
 }
 
 function sn6Flight() {
+  if (
+    document.querySelector(".iframee").src !=
+    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1"
+  ) {
+    document.querySelector(".iframee").src =
+      "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
+  }
   replayBtn.href = "https://www.youtube.com/watch?v=MdAKrzOLQTg";
-  document.querySelector(".iframee").src =
-    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
@@ -195,9 +208,14 @@ function sn6Flight() {
 }
 
 function sn5Flight() {
+  if (
+    document.querySelector(".iframee").src !=
+    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1"
+  ) {
+    document.querySelector(".iframee").src =
+      "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
+  }
   replayBtn.href = "https://www.youtube.com/watch?v=s1HA9LlFNM0";
-  document.querySelector(".iframee").src =
-    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
@@ -221,9 +239,14 @@ function sn5Flight() {
 }
 
 function sh3Flight() {
+  if (
+    document.querySelector(".iframee").src !=
+    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1"
+  ) {
+    document.querySelector(".iframee").src =
+      "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
+  }
   replayBtn.href = "https://www.youtube.com/watch?v=bYb3bfA6_sQ";
-  document.querySelector(".iframee").src =
-    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
@@ -246,9 +269,14 @@ function sh3Flight() {
 }
 
 function sh2Flight() {
+  if (
+    document.querySelector(".iframee").src !=
+    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1"
+  ) {
+    document.querySelector(".iframee").src =
+      "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
+  }
   replayBtn.href = "https://www.youtube.com/watch?v=bYb3bfA6_sQ";
-  document.querySelector(".iframee").src =
-    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
@@ -271,9 +299,15 @@ function sh2Flight() {
 }
 
 function sh1Flight() {
+  if (
+    document.querySelector(".iframee").src !=
+    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1"
+  ) {
+    document.querySelector(".iframee").src =
+      "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
+  }
+
   replayBtn.href = "https://www.youtube.com/watch?v=bYb3bfA6_sQ";
-  document.querySelector(".iframee").src =
-    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
 
   document.querySelector(".last-flight2").style.display = "flex";

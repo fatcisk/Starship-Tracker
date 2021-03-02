@@ -1,5 +1,7 @@
 const modelContainer = document.querySelector(".sketchfab-embed-wrapper");
 const backBtn = document.querySelector(".model-backbtn-container");
+const replayBtn = document.querySelector(".replaybtn");
+
 function mobile3dview() {
   modelContainer.style.display = "flex";
   modelContainer.style.position = "fixed";
@@ -114,6 +116,7 @@ firebase
 function myFunc() {}
 
 function sn9Flight() {
+  replayBtn.href = "https://www.youtube.com/watch?v=_zZ7fIkpBgs&t=342s";
   document.querySelector(".iframee").src =
     "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
@@ -140,6 +143,7 @@ function sn9Flight() {
 }
 
 function sn8Flight() {
+  replayBtn.href = "https://www.youtube.com/watch?v=ap-BkkrRg-o";
   document.querySelector(".iframee").src =
     "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
@@ -165,6 +169,7 @@ function sn8Flight() {
 }
 
 function sn6Flight() {
+  replayBtn.href = "https://www.youtube.com/watch?v=MdAKrzOLQTg";
   document.querySelector(".iframee").src =
     "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
@@ -190,6 +195,7 @@ function sn6Flight() {
 }
 
 function sn5Flight() {
+  replayBtn.href = "https://www.youtube.com/watch?v=s1HA9LlFNM0";
   document.querySelector(".iframee").src =
     "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
@@ -215,6 +221,7 @@ function sn5Flight() {
 }
 
 function sh3Flight() {
+  replayBtn.href = "https://www.youtube.com/watch?v=bYb3bfA6_sQ";
   document.querySelector(".iframee").src =
     "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
@@ -239,6 +246,7 @@ function sh3Flight() {
 }
 
 function sh2Flight() {
+  replayBtn.href = "https://www.youtube.com/watch?v=bYb3bfA6_sQ";
   document.querySelector(".iframee").src =
     "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";
@@ -263,6 +271,7 @@ function sh2Flight() {
 }
 
 function sh1Flight() {
+  replayBtn.href = "https://www.youtube.com/watch?v=bYb3bfA6_sQ";
   document.querySelector(".iframee").src =
     "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
   window.location.href = "#";

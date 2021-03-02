@@ -36,6 +36,9 @@
     <div class="left-container">
       <div onscroll="myFunc()" class="flights-container">
         <div class="last-flight">
+          <div class="uc-container">
+            <h1 class="uc-text">UPCOMING LAUNCH</h1>
+          </div>
           <h1 class="last-flight-name">
             Starship <span class="serial-number">SN10</span>
           </h1>
@@ -60,8 +63,15 @@
               <div class="Duration">-</div>
             </div>
           </div>
+          <div class="treedbtn-cont">
+            <button onclick="mobile3dview();" class="treedbtn">
+              <i class="fas fa-cubes"></i> 3D STARSHIP VIEW
+            </button>
+          </div>
         </div>
-
+        <div class="uc-container">
+          <h1 class="uc-text">PEREVIOS LAUNCHES</h1>
+        </div>
         <div id="a" class="last-flight last-flight2" style="display: none">
           <div onclick="closeTab()" class="close">
             <h1 class="close-button">&times;</h1>
@@ -94,9 +104,12 @@
               <div class="duration duration2">-</div>
             </div>
           </div>
+          <div class="treedbtn-cont">
+            <button onclick="mobile3dview();" class="treedbtn">
+              <i class="fas fa-cubes"></i> 3D STARSHIP VIEW
+            </button>
+          </div>
         </div>
-
-        <hr />
         <div class="all-flights">
           <a class="a" href="#a">
             <div onclick="sn9Flight()" class="sn9-flight snflight">
@@ -176,15 +189,14 @@
           <button onclick="saveUsername();" class="set-button">Save</button>
         </div>
         <hr />
-        <div class="jdf">
+        <div class="jdf2">
           <ul id="messages"></ul>
-          <h1 id="jdff">hello</h1>
+          <h1 id="jdff2">hello</h1>
         </div>
       </div>
       <div class="form-container">
         <form onsubmit="return sendMessage();" class="form" action="">
           <!--
-
        -->
 
           <input
@@ -207,8 +219,16 @@
         </form>
       </div>
     </div>
+
+    <div class="model-backbtn-container">
+      <button onclick="mobile3dviewBack();" class="back-button">
+        <i class="fas fa-long-arrow-alt-left"></i> BACK
+      </button>
+    </div>
+
     <div class="sketchfab-embed-wrapper">
       <iframe
+        class="iframee"
         style="border: none"
         title="STARSHIP MK1"
         src="https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=0&autostart=0&preload=1&ui_theme=1"

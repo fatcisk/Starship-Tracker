@@ -1,3 +1,21 @@
+const modelContainer = document.querySelector(".sketchfab-embed-wrapper");
+
+function mobile3dview() {
+  modelContainer.style.display = "flex";
+  modelContainer.style.position = "absolute";
+  modelContainer.style.top = "0";
+  document.body.style.overflow = "hidden";
+  backBtn.style.display = "block";
+}
+
+const backBtn = document.querySelector(".model-backbtn-container");
+
+function mobile3dviewBack() {
+  backBtn.style.display = "none";
+  modelContainer.style.display = "none";
+  document.body.style.overflow = "visible";
+}
+
 function sendMessage() {
   let myName = localStorage.getItem("username");
   let message = document.getElementById("message").value;
@@ -8,9 +26,11 @@ function sendMessage() {
       message: message,
     });
 
-    document.querySelector(".jdf").location.href = "#jdff";
+    document.querySelector(".jdf2").location.href = "#jdff2";
 
     return false;
+  } else {
+    document.querySelector(".jdf2").location.href = "#jdff2";
   }
 }
 
@@ -70,6 +90,8 @@ function upClick() {
 }
 
 function closeTab() {
+  document.querySelector(".iframee").src =
+    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=0&autostart=0&preload=1&ui_theme=1";
   document.querySelector(".last-flight2").style.display = "none";
 }
 
@@ -186,6 +208,8 @@ function sn5Flight() {
 }
 
 function sh3Flight() {
+  document.querySelector(".iframee").src =
+    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed";
   window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
@@ -208,6 +232,8 @@ function sh3Flight() {
 }
 
 function sh2Flight() {
+  document.querySelector(".iframee").src =
+    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed";
   window.location.href = "#";
   document.querySelector(".last-flight2").style.display = "flex";
 
@@ -230,6 +256,8 @@ function sh2Flight() {
 }
 
 function sh1Flight() {
+  document.querySelector(".iframee").src =
+    "https://sketchfab.com/models/3a14e78b7edb4e3baaa40069cdd60a7f/embed";
   window.location.href = "#";
 
   document.querySelector(".last-flight2").style.display = "flex";

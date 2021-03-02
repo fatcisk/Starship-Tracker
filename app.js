@@ -28,12 +28,9 @@ function sendMessage() {
       sender: myName,
       message: message,
     });
-
-    document.querySelector(".jdf2").location.href = "#jdff2";
-
     return false;
   } else {
-    document.querySelector(".jdf2").location.href = "#jdff2";
+    document.location = "#last";
   }
 }
 
@@ -51,13 +48,17 @@ const saveBtn = document.querySelector(".set-button");
 function saveUsername() {
   if (usernameInput.value === "") {
     alert("Please set your username");
-  } else {
+  }
+
+  if (usernameInput.value != "fatihcan") {
     messageInput.style.display = "block";
     sendButton.style.display = "block";
     localStorage.setItem("username", usernameInput.value);
     localStorage.setItem("inputVisible", "true");
     usernameInput.style.display = "none";
     saveBtn.style.display = "none";
+  } else {
+    alert("you can not take admins username");
   }
 }
 

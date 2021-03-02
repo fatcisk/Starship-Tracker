@@ -191,18 +191,22 @@
           />
           <button onclick="saveUsername();" class="set-button">Save</button>
         </div>
-        <hr />
+        <h1 class="ld-text">Live Community Chat <br />...</h1>
         <div class="jdf2">
           <ul id="messages"></ul>
-          <h1 id="jdff2">hello</h1>
         </div>
+        <h1 style="opacity: 0" id="last">last</h1>
       </div>
+      <a style="display: none" href="#last" class="lm-button">
+        <i class="fas fa-angle-double-down"></i> Latest Messages
+      </a>
       <div class="form-container">
         <form onsubmit="return sendMessage();" class="form" action="">
           <!--
        -->
 
           <input
+            onfocus="chatloadoff();"
             autocomplete="off"
             class="input"
             type="text"

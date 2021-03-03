@@ -38,6 +38,7 @@ function sended() {
   setTimeout(function () {
     let message = (document.getElementById("message").value = "");
   }, 30);
+  document.location = "#last";
 }
 
 const messageInput = document.getElementById("message");
@@ -63,6 +64,12 @@ function saveUsername() {
 }
 
 function check() {
+  function inputClick() {
+    document.location = "#last";
+  }
+
+  function lmbtn() {}
+
   if (localStorage.getItem("inputVisible") == "true") {
     messageInput.style.display = "block";
     sendButton.style.display = "block";

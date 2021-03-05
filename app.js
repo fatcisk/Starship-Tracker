@@ -124,8 +124,6 @@ firebase
     document.getElementById("messages").innerHTML += html;
   });
 
-function myFunc() {}
-
 function sn10Flight() {
   if (
     document.querySelector(".iframee").src !=

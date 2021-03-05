@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-right: 5px solid white;
 }
 
 .model-backbtn-container {
@@ -152,6 +153,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  border-left: 5px solid white;
 }
 
 .thumbs-container {
@@ -327,7 +329,22 @@
 .liveCam {
   color: #c20000;
   font-size: 20px;
-  background-color: black;
+  background-color: #dddddd;
+  padding: 5px 12px;
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.ld-text {
+  color: #232323;
+  font-size: 20px;
+  background-color: #dddddd;
+  padding: 5px 12px;
+  width: 90%;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .success {
@@ -340,11 +357,12 @@
   background: #2c2c2c;
   border-radius: 20px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .discussion-container {
   width: 85%;
-  height: 65%;
+  height: 54%;
   background: #2c2c2c;
   border-radius: 20px;
   overflow-y: scroll;
@@ -358,11 +376,6 @@
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 20px;
-}
-
-.ld-text {
-  color: white;
-  font-size: 24px;
 }
 
 li {

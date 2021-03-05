@@ -125,6 +125,34 @@ firebase
 
 function myFunc() {}
 
+function sn10Flight() {
+  if (
+    document.querySelector(".iframee").src !=
+    "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1"
+  ) {
+    document.querySelector(".iframee").src =
+      "https://sketchfab.com/models/5a708af84ef440c6a91f96c2b8284cc4/embed?autospin=1&autostart=1&preload=1&ui_theme=1";
+  }
+
+  replayBtn.href = "https://www.youtube.com/watch?v=ODY6JWzS8WU";
+  window.location.href = "#";
+  document.querySelector(".last-flight2").style.display = "flex";
+  document.querySelector(".last-flight-name2").innerHTML =
+    "Starship <span class='serial-number'>SN10</span>";
+  document.querySelector(".last-flight-description2").innerHTML =
+    "high-altitude flight test";
+  document.querySelector(".last-flight-status2").style.backgroundColor =
+    "#c20000";
+  document.querySelector(".curret-status").innerHTML =
+    "DESTROYED AFTER LANDING";
+  document.querySelector(".last-flight-paragraph2").innerHTML =
+    "SN10 achieved a hard landing with a slight lean, and a fire near the base, and then exploded eight minutes after landing.";
+  document.querySelector(".date2").innerHTML = "3 March 2021 23:15";
+  document.querySelector(".launch-site2").innerHTML = "Boca Chica, Texas";
+  document.querySelector(".apogee2").innerHTML = "10 km (6.2 mi)";
+  document.querySelector(".duration2").innerHTML = "6 minutes, 24 seconds";
+}
+
 function sn9Flight() {
   if (
     document.querySelector(".iframee").src !=

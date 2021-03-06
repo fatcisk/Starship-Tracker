@@ -6,14 +6,36 @@ const messageInput = document.getElementById("message");
 const usernameInput = document.querySelector(".set-input");
 const sendButton = document.getElementById("sendBtn");
 const saveBtn = document.querySelector(".set-button");
+const chatContainer = document.querySelector(".discussion-container");
+const messagesArea = document.querySelector(".jdf2");
+const lastMessages = document.querySelector(".lm-button");
+let myIntreval;
+
+chatContainer.addEventListener("scroll", function () {
+  let scrolled = chatContainer.scrollTop;
+  var scrollMaxY =
+    chatContainer.scrollMaxY ||
+    chatContainer.scrollHeight - chatContainer.clientHeight;
+  clearInterval(myIntreval);
+  localStorage.setItem("scrollmax", scrollMaxY);
+  if (scrolled === scrollMaxY) {
+    myIntreval = setInterval(function () {
+      chatContainer.scrollTop = localStorage.getItem("scrollmax");
+    }, 1000);
+  }
+  if (scrolled < scrollMaxY - 100) {
+    lastMessages.style.display = "block";
+  } else {
+    lastMessages.style.display = "none";
+  }
+});
+
+function inputClick() {
+  chatContainer.scrollTop = localStorage.getItem("scrollmax") - 1;
+}
 
 function check() {
-  function inputClick() {
-    document.location = "#last";
-  }
-
-  function lmbtn() {}
-
+  chatContainer.scrollTop = localStorage.getItem("scrollmax");
   if (localStorage.getItem("inputVisible") == "true") {
     messageInput.style.display = "block";
     sendButton.style.display = "block";
@@ -53,15 +75,18 @@ function sendMessage() {
     });
     return false;
   } else {
-    document.location = "#last";
+    alert("where is your message");
   }
 }
 
 function sended() {
+  setTimeout(() => {
+    chatContainer.scrollTop = localStorage.getItem("scrollmax");
+  }, 100);
+  chatContainer.scrollTop = localStorage.getItem("scrollmax");
   setTimeout(function () {
     let message = (document.getElementById("message").value = "");
   }, 30);
-  document.location = "#last";
 }
 
 firebase

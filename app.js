@@ -14,6 +14,7 @@ const fuelBtn = document.querySelector(".fill-text");
 const fuel = document.querySelector(".fill-fuel");
 const plusOne = document.querySelector(".plus-one");
 const fuelCounter = document.querySelector(".fuel-counter");
+const covergif = document.querySelector(".covergif");
 
 fuelBtn.addEventListener("click", function () {
   var newPlusOne = document.createElement("h1");
@@ -176,6 +177,7 @@ function closeTab() {
 }
 
 function sn10Flight() {
+  covergif.src = "./sn10cover.gif";
   window.location.href = "#";
   if (
     document.querySelector(".iframee").src !=
@@ -204,6 +206,7 @@ function sn10Flight() {
 }
 
 function sn9Flight() {
+  covergif.src = "./sn9cover.gif";
   document.querySelector(".sn11image").src = "./sn9flight";
   window.location.href = "#";
   if (
@@ -232,6 +235,7 @@ function sn9Flight() {
 }
 
 function sn8Flight() {
+  covergif.src = "./sn8cover.gif";
   window.location.href = "#";
   if (
     document.querySelector(".iframee").src !=
@@ -259,6 +263,7 @@ function sn8Flight() {
 }
 
 function sn6Flight() {
+  covergif.src = "./sn6cover.gif";
   window.location.href = "#";
   if (
     document.querySelector(".iframee").src !=
@@ -286,6 +291,7 @@ function sn6Flight() {
 }
 
 function sn5Flight() {
+  covergif.src = "./sn5cover.gif";
   window.location.href = "#";
   if (
     document.querySelector(".iframee").src !=

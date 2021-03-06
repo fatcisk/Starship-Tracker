@@ -51,11 +51,11 @@ chatContainer.addEventListener("scroll", function () {
       chatContainer.scrollTop = localStorage.getItem("scrollmax");
     }, 1000);
   }
-  if (scrolled < scrollMaxY - 100) {
-    lastMessages.style.display = "block";
-  } else {
-    lastMessages.style.display = "none";
-  }
+  // if (scrolled < scrollMaxY - 100) {
+  //   lastMessages.style.display = "block";
+  // } else {
+  //   lastMessages.style.display = "none";
+  // }
 });
 
 function inputClick() {

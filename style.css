@@ -30,13 +30,22 @@
   display: none;
 }
 
-.desktop-replay-button {
+.pc-replay {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pc-replay-link {
+  color: white;
+  background-color: #c20000;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  background-color: #c20000;
-  border: none;
-  color: white;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -44,16 +53,6 @@
   text-decoration: none;
   padding: 5px 18px;
   margin-top: 12px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.pc-replay {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 20px;
 }
 
 .back-button {

@@ -9,16 +9,11 @@
       src="https://kit.fontawesome.com/e9dae8f569.js"
       crossorigin="anonymous"
     ></script>
-    <title>SpaceX Starship Info</title>
+    <title>Starship Flights Dashboard</title>
   </head>
   <body onload="check();">
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
     <script>
       // Your web app's Firebase configuration
       var firebaseConfig = {
@@ -29,10 +24,8 @@
         messagingSenderId: "734761931715",
         appId: "1:734761931715:web:7a91afeec5bd011e676376",
       };
-      // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
     </script>
-
     <div class="left-container">
       <a
         href="https://twitter.com/fatihcnn_"
@@ -40,7 +33,7 @@
         class="twitter-link"
         ><i class="fab fa-twitter"></i> Follow @fatihcnn_</a
       >
-      <div onscroll="myFunc()" class="flights-container">
+      <div class="flights-container">
         <div class="last-flight">
           <div class="uc-container">
             <h1 class="uc-text">UPCOMING LAUNCH</h1>
@@ -115,10 +108,9 @@
               class="pc-replay-link"
               style="text-decoration: none"
               href=""
-              ><button class="desktop-replay-button">
-                <i class="fas fa-play"></i> REPLAY LAUNCH
-              </button></a
             >
+              <i class="fas fa-play"></i> REPLAY LAUNCH
+            </a>
           </div>
           <div class="treedbtn-cont treedbtn-cont2">
             <button onclick="mobile3dview();" class="treedbtn2">
@@ -225,7 +217,7 @@
         <div class="user-info">
           <input
             id="input3"
-            placeholder="Your Username"
+            placeholder="Set username to start"
             class="set-input"
             type="text"
           />
@@ -245,7 +237,7 @@
         <i class="fas fa-angle-double-down"></i> Latest Messages
       </a>
       <div class="form-container">
-        <form onsubmit="return sendMessage();" class="form" action="">
+        <form onsubmit="return sendMessage();" class="form">
           <!--
        -->
 
@@ -254,7 +246,6 @@
             autocomplete="off"
             class="input"
             type="text"
-            name=""
             id="message"
             style="display: none"
           />

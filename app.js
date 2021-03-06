@@ -10,6 +10,33 @@ const chatContainer = document.querySelector(".discussion-container");
 const messagesArea = document.querySelector(".jdf2");
 const lastMessages = document.querySelector(".lm-button");
 let myIntreval;
+const fuelBtn = document.querySelector(".fill-text");
+const fuel = document.querySelector(".fill-fuel");
+const plusOne = document.querySelector(".plus-one");
+const fuelCounter = document.querySelector(".fuel-counter");
+
+fuelBtn.addEventListener("click", function () {
+  var newPlusOne = document.createElement("h1");
+  fuel.prepend(newPlusOne);
+  newPlusOne.className = "plus-one";
+  newPlusOne.innerHTML = "+1";
+
+  setTimeout(() => {
+    newPlusOne.remove();
+  }, 1000);
+
+  firebase
+    .database()
+    .ref("fuels")
+    .set(firebase.database.ServerValue.increment(1));
+});
+
+firebase
+  .database()
+  .ref("fuels")
+  .on("value", function (snapshot) {
+    fuelCounter.innerHTML = snapshot.val();
+  });
 
 chatContainer.addEventListener("scroll", function () {
   let scrolled = chatContainer.scrollTop;
@@ -177,6 +204,7 @@ function sn10Flight() {
 }
 
 function sn9Flight() {
+  document.querySelector(".sn11image").src = "./sn9flight";
   window.location.href = "#";
   if (
     document.querySelector(".iframee").src !=

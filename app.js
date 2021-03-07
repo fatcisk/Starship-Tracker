@@ -15,6 +15,22 @@ const fuel = document.querySelector(".fill-fuel");
 const plusOne = document.querySelector(".plus-one");
 const fuelCounter = document.querySelector(".fuel-counter");
 const covergif = document.querySelector(".covergif");
+const formContainer = document.querySelector(".form-container");
+const openChatBtn = document.querySelector(".ld-text");
+
+function openChat() {
+  chatContainer.style.display = "block";
+  document.body.style.overflowY = "hidden";
+  formContainer.style.display = "block";
+  openChatBtn.style.display = "none";
+}
+
+function closeChat() {
+  chatContainer.style.display = "none";
+  document.body.style.overflowY = "scroll";
+  formContainer.style.display = "none";
+  openChatBtn.style.display = "block";
+}
 
 fuelBtn.addEventListener("click", function () {
   var newPlusOne = document.createElement("h1");
@@ -80,7 +96,7 @@ function saveUsername() {
     alert("Please set your username");
   }
 
-  if (usernameInput.value != "fatihcan") {
+  if (usernameInput.value != "fatihcajn") {
     messageInput.style.display = "block";
     sendButton.style.display = "block";
     localStorage.setItem("username", usernameInput.value);

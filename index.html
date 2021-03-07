@@ -265,11 +265,21 @@
           allowfullscreen
         ></iframe>
       </div>
-      <h1 class="ld-text">
+      <h1 onclick="openChat();" class="ld-text">
         <i class="fas fa-comment-alt"></i> Live Community Chat <br />
         <i class="fas fa-angle-double-up"></i>
       </h1>
       <div class="discussion-container">
+        <div class="pc-ldtext-container">
+          <h1 class="pc-ldtext">
+            <i class="fas fa-comment-alt"></i> Live Community Chat
+          </h1>
+        </div>
+
+        <div class="close-chat">
+          <h1><i class="fas fa-comment-alt"></i> Live Community Chat</h1>
+          <h1 onclick="closeChat();" class="close-chat-btn">&times;</h1>
+        </div>
         <div class="user-info">
           <input
             id="input3"

@@ -252,78 +252,48 @@
       </div>
     </div>
     <div class="right-container">
-      <div class="predictions-container">
-        <h1 class="liveCam">
-          <i class="fas fa-circle"></i> LAUNCH SITE LIVE CAM
-        </h1>
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/sTA0GTgFn5E?autoplay=0&mute=1"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <h1 onclick="openChat();" class="ld-text">
-        <i class="fas fa-comment-alt"></i> Live Community Chat <br />
-        <i class="fas fa-angle-double-up"></i>
-      </h1>
-      <div class="discussion-container">
-        <div class="pc-ldtext-container">
-          <h1 class="pc-ldtext">
-            <i class="fas fa-comment-alt"></i> Live Community Chat
+      <div class="cams">
+        <div class="cam1">
+          <h1 class="liveCam">
+            <i class="fas fa-circle"></i> NERDLE CAM
           </h1>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/sTA0GTgFn5E?autoplay=1&mute=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
-
-        <div class="close-chat">
-          <h1><i class="fas fa-comment-alt"></i> Live Community Chat</h1>
-          <h1 onclick="closeChat();" class="close-chat-btn">&times;</h1>
+        <div class="cam2">
+          <h1 class="liveCam">
+            <i class="fas fa-circle"></i> LAUNCH PAD CAM
+          </h1>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/qCbgoqMcirI?autoplay=1&mute=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
-        <div class="user-info">
-          <input
-            id="input3"
-            placeholder="Set username to start"
-            class="set-input"
-            type="text"
-          />
-          <button onclick="saveUsername();" class="set-button">Save</button>
+        <div class="cam3">
+          <h1 class="liveCam">
+            <i class="fas fa-circle"></i> SHIPYARD CAM
+          </h1>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/tYZaaz8UbRE?autoplay=1&mute=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
-        <div class="jdf2">
-          <ul id="messages"></ul>
-        </div>
-        <h1 style="opacity: 0" id="last">last</h1>
       </div>
-      <a
-        style="display: none"
-        onclick="lmbtn();"
-        href="#last"
-        class="lm-button"
-      >
-        <i class="fas fa-angle-double-down"></i> Latest Messages
-      </a>
-      <div class="form-container">
-        <form onsubmit="return sendMessage();" class="form">
-          <!--
-       -->
-          <input
-            onclick="inputClick();"
-            autocomplete="off"
-            class="input"
-            type="text"
-            id="message"
-            style="display: none"
-          />
-          <button
-            onclick="sended();"
-            style="display: none"
-            type="submit"
-            class="send-btn"
-            id="sendBtn"
-          >
-            <i class="fas fa-paper-plane"></i> Send
-          </button>
-        </form>
+
       </div>
     </div>
     <div class="model-backbtn-container">

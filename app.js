@@ -32,6 +32,14 @@ function closeChat() {
   openChatBtn.style.display = "block";
 }
 
+window.addEventListener("mousemove", function (e) {
+  let x = e.clientX;
+  let y = e.clientY;
+
+  console.log(x);
+  console.log(y);
+});
+
 fuelBtn.addEventListener("click", function () {
   var newPlusOne = document.createElement("h1");
   fuel.prepend(newPlusOne);
